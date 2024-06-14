@@ -1,7 +1,7 @@
 # import os
 
 # os.environ["OPENAI_API_KEY"] = ""
-# os.environ["groq_api_key"] = "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"
+# os.environ["groq_api_key"] = "d"
 
 db_user = "read"
 db_password = "12345"

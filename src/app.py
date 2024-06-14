@@ -17,14 +17,15 @@ def init_database(user: str, password: str, host: str, port: str, database: str)
 
 def get_sql_chain(db, llm):
   # Conversation History: {chat_history}
-  # Write only the SQL query and nothing else. Do not wrap the SQL query in any other text, not even backticks. 
   # Do not use backslash (\) to escape underscores (_) in column names. 
 
   template = """
     You are a data analyst at a company. You are interacting with a user who is asking you questions about the company's database.
-    Based on the table schema below, write a SQL query that would answer the user's question. Avoid ambiguous query by using it alias.
+    Based on the table schema below, write a SQL query that would answer the user's question. Avoid ambiguous query by using alias.
     
     <SCHEMA>{schema}</SCHEMA>
+
+    Write only the SQL query and nothing else because we will run your query to retrieves data. Do not wrap the SQL query in any other text, not even backticks. 
     
     For example:
     Question: which 3 artists have the most tracks?

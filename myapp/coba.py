@@ -16,7 +16,7 @@ from langchain.sql_database import SQLDatabase
 
 
 os.environ['OPENAI_API_KEY'] = "your_openai_api_key"
-os.environ["SERPAPI_API_KEY"] = "dfb43c9bac528617738c27528ab2669f7329791e01fe8bbdcd10d29186df5360"
+os.environ["SERPAPI_API_KEY"] = "s"
 
 mysql_db = SQLDatabase.from_uri("mysql://read:12345@localhost:3306/accounting") 
 
