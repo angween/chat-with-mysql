@@ -1,0 +1,21 @@
+### post
+POST http://localhost:8080/ai HTTP/1.1
+Content-Type: application/json
+
+{
+    "query": "What are the tables name"
+}
+
+###
+POST http://localhost:8080/ai HTTP/1.1
+Content-Type: application/json
+
+{
+    "query": "Di bulan apa pada tahun 2022 terjadi paling banyak transaksi?"
+}
+
+
+###
+GET https://app.tjahaja-baru.com HTTP/1.1
+
+
